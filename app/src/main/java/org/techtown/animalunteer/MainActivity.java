@@ -4,20 +4,22 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.view.MenuItem;
 
+import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 
 public class MainActivity extends AppCompatActivity {
-    //MapFragment map;
+    MapFragment mapFragment;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        /*map = new MapFragment();
+        mapFragment = new MapFragment();
 
-        getSupportFragmentManager().beginTransaction().replace(R.id.container, map).commit();
+        getSupportFragmentManager().beginTransaction().replace(R.id.container, mapFragment).commit();
 
         BottomNavigationView bottomNavigation = findViewById(R.id.bottom_navigation);
         bottomNavigation.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
@@ -25,12 +27,12 @@ public class MainActivity extends AppCompatActivity {
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
                 switch (item.getItemId()){
                     case R.id.map:
-                        getSupportFragmentManager().beginTransaction().replace(R.id.container, map).commit();
+                        getSupportFragmentManager().beginTransaction().replace(R.id.container, mapFragment).commit();
                         return true;
                 }
                 return false;
             }
-        }); */
+        });
 
     }
 }
