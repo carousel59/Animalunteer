@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/map"
+        android:icon="@drawable/map"
+        android:title="map"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/shelter"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/menu"
+        android:title="보호소 정보"/>
+
+    <item
+        android:id="@+id/volunteer"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/inform"
+        android:title="봉사자모집"/>
+
+</menu>
