@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "414962393215",
+    "firebase_url": "https://animalunteer-c715e-default-rtdb.firebaseio.com",
+    "project_id": "animalunteer-c715e",
+    "storage_bucket": "animalunteer-c715e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:414962393215:android:a345704991872d27001f4a",
+        "android_client_info": {
+          "package_name": "org.techtown.animalunteer"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "414962393215-q3fskvmjugiqjgqrh2g8jerobvfosv8l.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "org.techtown.animalunteer",
+            "certificate_hash": "7f20869e13e6b354cf081a4b8f18aa581709f850"
+          }
+        },
+        {
+          "client_id": "414962393215-dn3vfehje5p9khndec1tsc72j53l76gh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD2K7pnkKtYqgKTnyagK8Gxf8ujtGdBg5A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "414962393215-dn3vfehje5p9khndec1tsc72j53l76gh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

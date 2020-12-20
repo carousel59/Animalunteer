@@ -6,9 +6,9 @@
     tools:context=".InformFragment">
 
     <TextView
+        android:id="@+id/testttt"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="hello"
         android:textSize="24sp"/>
 
 </FrameLayout>
