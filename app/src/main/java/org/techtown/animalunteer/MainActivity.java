@@ -12,6 +12,7 @@ import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class MainActivity extends AppCompatActivity {
     MapFragment mapFragment;
+    InformFragment informFragment;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,6 +20,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         mapFragment = new MapFragment();
+        informFragment = new InformFragment();
 
         getSupportFragmentManager().beginTransaction().replace(R.id.container, mapFragment).commit();
 
@@ -29,6 +31,9 @@ public class MainActivity extends AppCompatActivity {
                 switch (item.getItemId()){
                     case R.id.map:
                         getSupportFragmentManager().beginTransaction().replace(R.id.container, mapFragment).commit();
+                        return true;
+                    case R.id.information:
+                        getSupportFragmentManager().beginTransaction().replace(R.id.container, informFragment).commit();
                         return true;
                 }
                 return false;
