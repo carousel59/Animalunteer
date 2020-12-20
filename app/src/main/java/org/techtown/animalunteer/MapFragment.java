@@ -71,6 +71,18 @@ public class MapFragment extends Fragment implements OnMapReadyCallback {
         CameraUpdate cameraUpdate = CameraUpdateFactory.newLatLngZoom(new LatLng(35.84686, 127.12928), 14);
         googleMap.animateCamera(cameraUpdate);
         googleMap.addMarker(new MarkerOptions().position(new LatLng(35.84686, 127.12928)).title("전북대"));
+        googleMap.addMarker(new MarkerOptions().position(new LatLng(35.248249149175464, 126.87892031351352)).title("광주 동물보호소"));
+        googleMap.addMarker(new MarkerOptions().position(new LatLng(35.93675756279481, 127.00240979763991)).title("익산 유기동물보호소"));
+        googleMap.addMarker(new MarkerOptions().position(new LatLng(35.960714650804206, 126.81577296139993)).title("군산 유기동물보호센터"));
+        googleMap.addMarker(new MarkerOptions().position(new LatLng(34.85372948216843, 126.43027889760849)).title("목포시 유기동물보호소"));
+        googleMap.addMarker(new MarkerOptions().position(new LatLng(34.74855690548188, 126.4859461571284)).title("삼호 유기견 보호소"));
+        googleMap.addMarker(new MarkerOptions().position(new LatLng(36.02332725365387, 126.98921944437555)).title("하얀강아지"));
+        googleMap.addMarker(new MarkerOptions().position(new LatLng(35.15567471475577, 126.8354954424672)).title("광주동물보호협회 위드")); //광주
+        googleMap.addMarker(new MarkerOptions().position(new LatLng(35.008368335584976, 127.03245337255996)).title("화순동물보호협회 위드")); //화순
+        googleMap.addMarker(new MarkerOptions().position(new LatLng(35.80363099809347, 126.88053702599807)).title("동행세상"));
+        googleMap.addMarker(new MarkerOptions().position(new LatLng(35.01600720920167, 126.71082508179154)).title("나주 천사의 집"));
+        googleMap.addMarker(new MarkerOptions().position(new LatLng(35.0160752774857, 127.37918695480633)).title("순천 유기동물 보호소"));
+        googleMap.addMarker(new MarkerOptions().position(new LatLng(34.761940865406906, 127.66178693838108)).title("여수 여미지 보호소"));
     }
 
 }
