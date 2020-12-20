@@ -68,9 +68,12 @@ public class MapFragment extends Fragment implements OnMapReadyCallback {
     public void onMapReady(GoogleMap googleMap) {
         MapsInitializer.initialize(this.getActivity());
 
+        // 지도 시작위치
         CameraUpdate cameraUpdate = CameraUpdateFactory.newLatLngZoom(new LatLng(35.84686, 127.12928), 14);
         googleMap.animateCamera(cameraUpdate);
         googleMap.addMarker(new MarkerOptions().position(new LatLng(35.84686, 127.12928)).title("전북대"));
+
+        // 보호소 마커
         googleMap.addMarker(new MarkerOptions().position(new LatLng(35.248249149175464, 126.87892031351352)).title("광주 동물보호소"));
         googleMap.addMarker(new MarkerOptions().position(new LatLng(35.93675756279481, 127.00240979763991)).title("익산 유기동물보호소"));
         googleMap.addMarker(new MarkerOptions().position(new LatLng(35.960714650804206, 126.81577296139993)).title("군산 유기동물보호센터"));
