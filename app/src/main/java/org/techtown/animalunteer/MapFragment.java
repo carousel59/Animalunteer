@@ -143,6 +143,7 @@ public class MapFragment extends Fragment implements OnMapReadyCallback {
                 LinearLayout info = new LinearLayout(context);
                 info.setOrientation(LinearLayout.VERTICAL);
 
+                // 정보창 design
                 TextView title = new TextView(context);
                 title.setTextColor(Color.BLACK);
                 title.setGravity(Gravity.CENTER);
@@ -155,8 +156,6 @@ public class MapFragment extends Fragment implements OnMapReadyCallback {
 
                 info.addView(title);
                 info.addView(snippet);
-
-
 
                 return info;
             }

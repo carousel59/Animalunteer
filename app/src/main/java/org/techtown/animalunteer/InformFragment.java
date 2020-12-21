@@ -12,8 +12,6 @@ public class InformFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View v = inflater.inflate(R.layout.fragment_inform, container, false);
 
-
-
         // Inflate the layout for this fragment
         return v;
     }
