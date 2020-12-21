@@ -73,13 +73,78 @@
                     android:layout_height="wrap_content"
                     android:text="- 종합 유기동물 보호센터\nhttps://www.zooseyo.or.kr/zooseyo_or_kr.html?"
                     android:textSize="18sp"
+                    android:autoLink="all"
+                    android:paddingBottom="10dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="- 동물보호관리시스템\nhttps://www.animal.go.kr/front/index.do"
+                    android:textSize="18sp"
                     android:autoLink="all"/>
 
             </LinearLayout>
 
         </androidx.cardview.widget.CardView>
 
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="5dp"
+            app:cardUseCompatPadding="true"
+            app:cardBackgroundColor="@color/under">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="유기동물 습득시 안내"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="5dp"
+                    android:textSize="22sp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="- 공공장소를 떠돌거나 버려진 동물을 발견한 경우 관할 시ㆍ군ㆍ구청과 해당 유기동물 보호시설에 신고해야 합니다."
+                    android:textSize="15sp"
+                    android:paddingBottom="5dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="- 유기동물을 주인 없는 동물이라 여겨 마음대로 잡아서 팔거나 죽이면 2년 이하의 징역 또는 2천만원 이하의 벌금을 내게 됩니다."
+                    android:textSize="15sp"
+                    android:paddingBottom="5dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="- 시장ㆍ군수ㆍ구청장은 관내에서 발견된 유기동물이 보호받을 수 있도록 필요한 조치를 해야 하며, 주인을 찾을 수 있도록 그 사실을 7 일 이상 공고해야 합니다."
+                    android:textSize="15sp"
+                    android:paddingBottom="5dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="- 공고 후 10일이 지나도 주인을 찾지 못한 경우, 해당 시ㆍ군ㆍ구등이 동물의 소유권을 갖게 되어 개인에게 기증하거나 분양할 수 있습니다."
+                    android:textSize="15sp"
+                    android:paddingBottom="5dp"/>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
     </LinearLayout>
+
+
 
 
 
