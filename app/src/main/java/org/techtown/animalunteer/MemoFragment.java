@@ -4,6 +4,7 @@ import android.content.Context;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentTransaction;
 
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -24,7 +25,6 @@ public class MemoFragment extends Fragment {
     EditText dateInput;
     EditText shelterInput;
     EditText contentsInput;
-
 
     int mMode = AppConstants.MODE_INSERT;
     int _id = -1;
@@ -49,8 +49,9 @@ public class MemoFragment extends Fragment {
     }
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+    public View onCreateView(LayoutInflater inflater, final ViewGroup container, Bundle savedInstanceState) {
         ViewGroup rootView = (ViewGroup) inflater.inflate(R.layout.fragment_memo, container, false);
+
         initUI(rootView);
         applyItem();
 
@@ -62,7 +63,6 @@ public class MemoFragment extends Fragment {
         shelterInput = rootView.findViewById(R.id.shelterInput);
         contentsInput = rootView.findViewById(R.id.contentsInput);
 
-
         Button saveButton = rootView.findViewById(R.id.saveButton);
         saveButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -71,6 +71,7 @@ public class MemoFragment extends Fragment {
                     saveMemo();
                 } else if(mMode == AppConstants.MODE_MODIFY){
                     modifyMemo();
+                    mMode = AppConstants.MODE_INSERT;
                 }
                 if(listener != null){
                     listener.onButtonSelected(0);
@@ -147,6 +148,7 @@ public class MemoFragment extends Fragment {
         Log.d(TAG, "sql : " + sql);
         MemoDatabase database = MemoDatabase.getInstance(context);
         database.execSQL(sql);
+        mMode = AppConstants.MODE_INSERT;
     }
 
     private void modifyMemo() {
@@ -166,6 +168,8 @@ public class MemoFragment extends Fragment {
             MemoDatabase database = MemoDatabase.getInstance(context);
             database.execSQL(sql);
         }
+        item = null;
+        mMode = AppConstants.MODE_INSERT;
     }
 
     private void deleteMemo() {
@@ -180,6 +184,8 @@ public class MemoFragment extends Fragment {
             MemoDatabase database = MemoDatabase.getInstance(context);
             database.execSQL(sql);
         }
+        item = null;
+        mMode = AppConstants.MODE_INSERT;
     }
 
 }
