@@ -35,6 +35,8 @@
                     android:hint="날짜 입력"
                     android:inputType="textNoSuggestions"
                     android:maxLines="1"
+                    android:textColorHighlight="@color/middle"
+                    android:textColorLink="@color/middle"
                     android:textSize="20sp" />
 
                 <EditText
@@ -44,6 +46,8 @@
                     android:hint="보호소 입력"
                     android:inputType="textNoSuggestions"
                     android:maxLines="1"
+                    android:textColorHighlight="@color/middle"
+                    android:textColorLink="@color/middle"
                     android:textSize="20sp" />
 
                 <EditText
@@ -54,6 +58,8 @@
                     android:inputType="textNoSuggestions"
                     android:lines="3"
                     android:maxLines="4"
+                    android:textColorHighlight="@color/middle"
+                    android:textColorLink="@color/middle"
                     android:textSize="32sp" />
 
             </LinearLayout>

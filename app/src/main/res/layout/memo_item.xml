@@ -34,6 +34,9 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="날짜"
+                    android:textColor="@color/top"
+                    android:textColorHighlight="@color/middle"
+                    android:textColorLink="@color/middle"
                     android:textSize="20sp" />
 
                 <TextView
@@ -42,6 +45,8 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="보호소"
+                    android:textColorHighlight="@color/middle"
+                    android:textColorLink="@color/middle"
                     android:textSize="20sp" />
 
             </LinearLayout>
@@ -50,7 +55,10 @@
                 android:id="@+id/contentsTextView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_margin="5dp"
                 android:text="내용"
+                android:textColorHighlight="@color/middle"
+                android:textColorLink="@color/middle"
                 android:textSize="24sp" />
 
         </LinearLayout>
