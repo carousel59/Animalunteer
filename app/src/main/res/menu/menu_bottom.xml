@@ -12,7 +12,7 @@
         android:id="@+id/volunteer"
         app:showAsAction="ifRoom"
         android:icon="@drawable/inform"
-        android:title="봉사자모집"/>
+        android:title="봉사기록"/>
 
     <item
         android:id="@+id/information"
