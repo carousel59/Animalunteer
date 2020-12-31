@@ -2,7 +2,9 @@
 ## Abandoned animal shelter App
 
 ### 지도 화면
-![KakaoTalk_20201231_145553580_05](https://user-images.githubusercontent.com/45174177/103396917-32c79a00-4b79-11eb-8266-6a5499da18f6.jpg)
+<div>
+<img width="200" src="https://user-images.githubusercontent.com/45174177/103396917-32c79a00-4b79-11eb-8266-6a5499da18f6.jpg">
+</div>
 
 ### 봉사 후기 작성 화면
 #### 초기화면
