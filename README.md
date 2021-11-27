@@ -58,5 +58,5 @@ GoogleMap API를 사용해 구현
 
 
 ### 참고 자료
-https://mailmail.tistory.com/19
-https://wonpaper.tistory.com/250
+- https://mailmail.tistory.com/19
+- https://wonpaper.tistory.com/250
